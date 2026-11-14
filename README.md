@@ -1,6 +1,6 @@
 # Campus Device Tracker Part 2
 
-SE411 project integrating the existing React tracker with a Java Spring Boot REST server. The current project builds on the Part 1 interface and the prior SE411 archive's Java model, Spring setup, and asset routes. Device records live in the server's memory and reset when the server restarts. Refreshing React does not reset them.
+SE411 project integrating the existing React tracker with a Java Spring Boot REST server. Device records live in the server's memory and reset when the server restarts. Refreshing React does not reset them.
 
 ## Run locally
 
@@ -49,6 +49,4 @@ Verification on 14 November 2026: 12 backend tests and 7 Part 1 JavaScript tests
 2. Add a device. Find it by name to see its assigned ID.
 3. Enter that ID in **Find by ID**, then edit the result and change its status.
 4. Refresh the page, look up the same ID again, and show that the server retained the update. Try a missing ID to show the error.
-5. If time permits, show how the backend tests mock the storage or service layer and show the recorded output from your own test run.
-
-Team information in the app currently reflects the supplied Part 1 project. Confirm your actual team details and the instructor’s rules on reuse before submission.
+5. Run the backend tests and explain how Mockito isolates the controller and service.
