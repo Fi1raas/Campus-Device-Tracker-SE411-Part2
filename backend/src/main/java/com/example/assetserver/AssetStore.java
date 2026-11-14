@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Optional;
 import org.springframework.stereotype.Repository;
 
-/** In-memory storage reused from the earlier Spring project. */
+/** Stores devices in memory and assigns their IDs. */
 @Repository
 public class AssetStore {
     private final Map<Long, Asset> assets = new LinkedHashMap<>();
